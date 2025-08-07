@@ -167,12 +167,13 @@ nav#nav a:hover::after {
 
 /* Profile Image */
 .profile-image {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--accent-cyan);
   box-shadow: 0 0 20px var(--accent-cyan);
+  margin-top: 2rem;
 }
 
 /* Typography */
