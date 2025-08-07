@@ -66,35 +66,67 @@ body::after {
 
 /* Header */
 header#header {
-  background: hsl(220, 30%, 8% / 0.8);
-  backdrop-filter: blur(20px);
-  padding: 15px 0;
+  background: transparent;
+  padding: 20px 40px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  border-bottom: 1px solid hsl(180, 100%, 50% / 0.2);
-  transition: all 0.3s ease;
-}
-
-header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header h1 a {
-  text-decoration: none;
-  color: var(--accent-cyan);
+.logo a {
   font-family: 'Orbitron', monospace;
   font-size: 2rem;
   font-weight: 700;
-  background: linear-gradient(135deg, hsl(180, 100%, 50%) 0%, hsl(260, 100%, 60%) 50%, hsl(120, 100%, 50%) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200% 200%;
-  animation: gradient-shift 3s ease infinite;
+  color: var(--accent-cyan);
+  text-decoration: none;
+  text-shadow: 0 0 10px var(--accent-cyan);
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-cyan);
+  box-shadow: 0 0 30px var(--accent-cyan);
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  color: var(--accent-cyan);
+  margin: 1rem 0;
+  text-shadow: 0 0 20px var(--accent-cyan);
+  font-family: 'Orbitron', monospace;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  text-shadow: 0 0 10px var(--accent-purple);
 }
 
 @keyframes gradient-shift {
@@ -477,6 +509,52 @@ ul li::before {
   
   .content-section {
     padding: 90px 10px 50px;
+  }
+}
+
+/* Floating Shapes */
+.floating-shape {
+  position: absolute;
+  opacity: 0.3;
+  pointer-events: none;
+  animation: float 20s ease-in-out infinite;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 25px solid;
+}
+
+.square {
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+}
+
+.hexagon {
+  width: 30px;
+  height: 17.32px;
+  background: transparent;
+  position: relative;
+  border: 2px solid;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-100px) rotate(180deg);
   }
 }
 
