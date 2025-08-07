@@ -1,33 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Basic setup for a modern webpage -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arjun's Portfolio</title>
 
-    <!-- This is the crucial line that loads your stylesheet -->
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ui-neon.css">
+    <link rel="stylesheet" href="css/floating-coder-bg.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <header id="header">
+        <div class="container">
+            <h1><a href="#home">Arjun</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <!-- Your name as the main heading -->
-    <h1>Arjun</h1>
+    <main>
+        <div class="content-section" id="home">
+            <div class="container">
+                <div class="profile-container">
+                    <img src="images/IMG_5554.jpeg" alt="Arjun" class="profile-image">
+                    <h2>I'm Arjun</h2>
+                    <p class="subtitle">Software Engineer | AI Enthusiast | Full Stack Developer</p>
+                    <a href="Resume.pdf" class="button" download>Download My Resume</a>
+                </div>
+            </div>
+        </div>
 
-    <!-- A navigation block for your links -->
-    <nav>
-        <ul>
-            <!-- Each item is a clickable link. Update href="#" later. -->
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Research</a></li>
-            <li><a href="#">Certificates</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+        <div class="content-section" id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="terminal-box">
+                    <div class="terminal-header">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="prompt">$</span> whoami</p>
+                        <p class="response">Arjun</p>
+                        
+                        <p><span class="prompt">$</span> cat background.txt</p>
+                        <p class="response">I'm a Software Engineer with expertise in AI/ML and Full Stack Development. Currently focused on building innovative solutions using cutting-edge technologies.</p>
+                        
+                        <p><span class="prompt">$</span> cat work_experience.txt</p>
+                        <p class="response">Working on exciting projects involving artificial intelligence, machine learning, and web development. Passionate about creating efficient and scalable solutions.</p>
+                        
+                        <p><span class="prompt">$</span> cat vision.txt</p>
+                        <p class="response">To leverage technology in creating impactful solutions that make a difference in people's lives.</p>
+                        
+                        <p><span class="prompt">$</span> cat skills.txt</p>
+                        <p class="response highlight">• Programming: Python, JavaScript, TypeScript, Java<br>
+                        • Web Development: React, Node.js, Next.js, Django<br>
+                        • AI/ML: TensorFlow, PyTorch, Scikit-learn<br>
+                        • Tools: Git, Docker, AWS, Azure</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!-- Your page content will go here later -->
+        <div class="content-section" id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <p>Description of your first major project.</p>
+                    <a href="#" class="button">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Project 2</h3>
+                    <p>Description of your second major project.</p>
+                    <a href="#" class="button">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Project 3</h3>
+                    <p>Description of your third major project.</p>
+                    <a href="#" class="button">View Project</a>
+                </div>
+            </div>
+        </div>
 
+        <div class="content-section" id="research">
+            <div class="container">
+                <h2>Research & Publications</h2>
+                <div class="publication">
+                    <h3>Research Paper Title</h3>
+                    <p>Description of your research work and findings.</p>
+                    <p class="highlight">Journal: Research Journal Name | Impact Factor: X.X</p>
+                    <a href="#" class="button">Read Paper</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section" id="certificates">
+            <div class="container">
+                <h2>Certificates & Honors</h2>
+                <ul>
+                    <li>Certificate 1 - Description and date</li>
+                    <li>Certificate 2 - Description and date</li>
+                    <li>Certificate 3 - Description and date</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-section" id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p class="center">I'm always open to new opportunities and collaborations.</p>
+                <ul class="contact-icons">
+                    <li><a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="https://linkedin.com/in/yourusername"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/yourusername"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://twitter.com/yourusername"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Arjun. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="cursor"></div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/floating-coder-bg.js"></script>
+    <script src="js/ui-neon-bg.js"></script>
+    <script src="js/parallax.js"></script>
 </body>
 </html>

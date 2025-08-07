@@ -165,6 +165,16 @@ nav#nav a:hover::after {
   z-index: -1;
 }
 
+/* Profile Image */
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-cyan);
+  box-shadow: 0 0 20px var(--accent-cyan);
+}
+
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Orbitron', monospace;
