@@ -1,0 +1,94 @@
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+    /* Header & Navigation */
+    #header {
+        padding: 1rem;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+    }
+    
+    #nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        padding: 2rem 1rem;
+    }
+
+    .profile-circle {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 1.5rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    /* Content Sections */
+    .content-section {
+        padding: 2rem 1rem;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    /* Terminal Box */
+    .terminal-box {
+        margin: 1rem 0;
+        font-size: 0.9rem;
+    }
+
+    /* Projects */
+    .project {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Contact Icons */
+    .contact-icons {
+        gap: 1.5rem;
+    }
+
+    .contact-icons li a {
+        font-size: 1.8rem;
+    }
+
+    /* Fix touch target sizes */
+    a, button, .button {
+        min-height: 44px;
+        min-width: 44px;
+        padding: 0.8rem 1.2rem;
+    }
+
+    /* Improve readability */
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    /* Add smooth scrolling for anchor links */
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+/* Fix for iOS Safari height issues */
+@supports (-webkit-touch-callout: none) {
+    .hero-section, .content-section {
+        min-height: -webkit-fill-available;
+    }
+}
